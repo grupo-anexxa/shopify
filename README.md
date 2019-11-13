@@ -5,22 +5,15 @@ Nem todos os campos são obrigatorio.
 
 Adicionar os Products
 
-/*
 Parametro title não pode ficar vazio
-*/
 
 Adicionar os Costumers
 
-/* 
-Customers -
-Nome, telefone e email não pode ficar vazio"
-*/
+Customers - Nome, telefone e email não pode ficar vazio"
 
 Adicionar os Order
 
-/* 
 Nome, telefone e email não pode ficar vazio"
-*/
 
 
 Mostra informações use var_dump ou print_r
