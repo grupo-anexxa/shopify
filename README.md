@@ -6,80 +6,80 @@ Nem todos os campos são obrigatorio.
 
 ***Adicionar os Products***
 
--title
+- title
 
 não pode ficar vazio
 
 ***Adicionar os Costumers***
 
--Nome
+- Nome
 
--telefone 
+- telefone 
 
--email 
+- email 
 
 não pode ficar vazio
 
 ***Adicionar os Order***
 
--Nome
+- Nome
 
--telefone 
+- telefone 
 
--email 
+- email 
 
 não pode ficar vazio
 
 Mostra informações use var_dump ou print_r pra exibir propriedades de retorno da saída.
-'''
+```
 funções Costumers = getUrlCustomers();
 funções Order     = getUrlOrder();
 funções Products  = getUrlProducts();
-'''
+```
 Dados que podem ser adicionados.
+```
+$title        -- Nome do produto
 
-$title       -- Nome do produto
+$producttype  --Tipo do produto
 
-$producttype --Tipo do produto
+$vendor       -- Fornecedor 
 
-$vendor      -- Fornecedor 
+$price        --Valor Líquido 
 
-$price       --Valor Líquido 
+$amount       -- Valor total do produto
 
-$amount      -- Valor total do produto
+$taxes        -- Valor Bruto 
 
-$taxes       -- Valor Bruto 
+$quantity     -- Quantidade de produto comprado
 
-$quantity    -- Quantidade de produto comprado
+$email        -- Email do cliente
 
-$email       -- Email do cliente
+$firstname    -- Nome do cliente
 
-$firstname   -- Nome do cliente
+$lastname     -- Sobre nome do cliente
 
-$lastname    -- Sobre nome do cliente
+$phone        -- Telefone do cliente
 
-$phone       -- Telefone do cliente
+$company      -- Nome da Empresa
 
-$company     -- Nome da Empresa
+$country      -- País
 
-$country     -- País
+$address      -- Endereço da compra
 
-$address     -- Endereço da compra
+$suite        -- numero
 
-$suite       -- numero
+$city         -- Cidade
 
-$city        -- Cidade
+$state        -- Estado
 
-$state       -- Estado
+$zipcode      -- Codigo Postal
+```
+***Dados da shopify***
+```
+$apiKey        -- API key
 
-$zipcode     -- Codigo Postal
+$apiPassword   -- API key Password
 
-Dados da shopify
-
-$apiKey       -- API key
-
-$apiPassword  -- API key Password
-
-$nameShop     -- Name API
-
+$nameShop      -- Name API
+```
 Para pegar esse dados acesse - [Shopify](https://zicpay-com-br.myshopify.com/admin/apps/private)
