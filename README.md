@@ -32,9 +32,9 @@ não pode ficar vazio
 
 Mostra informações use var_dump ou print_r pra exibir propriedades de retorno da saída.
 ```
-funções Costumers = getUrlCustomers();
-funções Order     = getUrlOrder();
-funções Products  = getUrlProducts();
+funções Costumers = getCustomers();
+funções Order     = getOrder();
+funções Products  = getProducts();
 ```
 Dados que podem ser adicionados.
 ```

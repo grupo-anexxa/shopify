@@ -5,9 +5,9 @@ use GrupoAnexxa\Shopify\ShopifyAPI;
 require_once 'src/autoload.php';
 
 /*Dados da shopify*/
-$apiKey      = '8639a288878e119de8ab26cfee270dfe';
-$apiPassword = '34c84d7f4c7af34951668bd7694a7a1a';
-$nameShop    = 'zicpay-com-br';
+$apiKey      = 'api key';
+$apiPassword = 'api key password';
+$nameShop    = 'name shop';
 
 $shopify = new ShopifyAPI($apiKey, $apiPassword, $nameShop);
 
@@ -23,21 +23,12 @@ $firstname   = (string) 'John';
 $lastname    = (string) 'West';
 $phone       = (string) '+15142246011';
 $company     = (string) 'Grupo Anexxa';
-$country     = (string) 'Brasil';
-$address     = (string) 'rua Ze comeia';
+$address     = (string) 'rua Zé comeia';
 $suite       = (string) '131';
 $city        = (string) 'São paulo';
 $country     = (string) 'Brazil';
 $state       = (string) 'São Paulo';
 $zipcode     = (string) '03008030';
-
-/*Param title não pode ficar vazio*/
-
-/* 
-Customers -
-Customer must have a name, phone number or email address"
-*/
-
 
 $order = $shopify->setFirstname($firstname);
 $order = $shopify->setLastname($lastname);
@@ -55,14 +46,14 @@ $order = $shopify->setCountry($country);
 $order = $shopify->setState($state);
 $order = $shopify->setZipcode($zipcode);
 
-$geturlorder = $shopify->getUrlOrder($order);
+$getorder = $shopify->getOrder($order);
 
 $products = $shopify->setTitle($title);
 $products = $shopify->setProducttype($producttype);
 $products = $shopify->setVendor($vendor);
 $products = $shopify->setPrice($price);
 
-$geturlproducts = $shopify->getUrlProducts($products);
+$getproducts = $shopify->getProducts($products);
 
 $costumers = $shopify->setFirstname($firstname);
 $costumers = $shopify->setLastname($lastname);
@@ -75,6 +66,6 @@ $costumers = $shopify->setCountry($country);
 $costumers = $shopify->setState($state);
 $costumers = $shopify->setZipcode($zipcode);
 
-$geturlcostumers = $shopify->getUrlCustomers($costumers);
+$getcostumers = $shopify->getCustomers($costumers);
 
 //var_dump($geturlorder);

@@ -26,9 +26,9 @@ class ShopifyAPI
 	private  $amount;
 	private  $id;
 
-	protected $apiKey;       /*8639a288878e119de8ab26cfee270dfe*/
-	protected $apiPassword; /*34c84d7f4c7af34951668bd7694a7a1a*/
-	protected $nameShop;   /*zicpay-com-br*/
+	protected $apiKey;      
+	protected $apiPassword; 
+	protected $nameShop;  
 
 	public function __construct($apiKey = '', $apiPassword = '', $nameShop = '', $email='', $quantity='', $vendor='', $title='', $productType='', $price='', $firstName='', $lastName='', $company='', $address='', $suite='', $city='', $country='', $state='', $zipCode='', $amount='')
 	{
@@ -91,7 +91,7 @@ class ShopifyAPI
 		}
 	}
 
-	public function getUrlOrder()
+	public function getOrder()
 	{
 		if($this->queryShop() === true)
 		{
@@ -164,7 +164,7 @@ class ShopifyAPI
 		}
 	}
 
-	public function getUrlProducts()
+	public function getProducts()
 	{
 
 		if($this->queryShop() === true)
@@ -211,7 +211,7 @@ class ShopifyAPI
 		}
 	}
 
-	public function getUrlCustomers()
+	public function getCustomers()
 	{
 
 		if($this->queryShop() === true)
