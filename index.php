@@ -5,9 +5,9 @@ use GrupoAnexxa\Shopify\ShopifyAPI;
 require_once 'src/autoload.php';
 
 /*Dados da shopify*/
-$apiKey      = 'api key';
-$apiPassword = 'api key password';
-$nameShop    = 'name shop';
+$apiKey      = '8639a288878e119de8ab26cfee270dfe';
+$apiPassword = '34c84d7f4c7af34951668bd7694a7a1a';
+$nameShop    = 'zicpay-com-br';
 
 $shopify = new ShopifyAPI($apiKey, $apiPassword, $nameShop);
 
@@ -17,11 +17,11 @@ $vendor      = (string) 'Legumes';
 $price       = (string) '20.20';  /*Usar ponto*/
 $amount      = (string) "40.00"; /*Usar ponto*/
 $taxes       = (string) '0';
-$email       = (string) 'steve.lastnameson@example.com';
+$email       = (string) 'kaleb.pigte@example.com';
 $quantity    = (string) '2';
-$firstname   = (string) 'John';
-$lastname    = (string) 'West';
-$phone       = (string) '+15142246011';
+$firstname   = (string) 'John2';
+$lastname    = (string) 'West2';
+$phone       = (string) '974963195';
 $company     = (string) 'Grupo Anexxa';
 $address     = (string) 'rua Zé comeia';
 $suite       = (string) '131';
